@@ -1,0 +1,15 @@
+.header{
+    grid-area: header;
+    background-color: #16163D;
+    color: #d7ade0;
+    opacity: 0.7;
+
+    -moz-box-shadow: 0 0 30px #9f81c0;
+    -webkit-box-shadow: 0 0 30px #9f81c0;
+    box-shadow: 0 0 30px #9f81c0;
+  }
+  .header img{
+      padding:5px;
+      height: 50px;
+  }
+  
