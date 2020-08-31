@@ -23,9 +23,30 @@
 	font-style: normal;
 }
 
-body {
-  background-color: #010223;
+html {
+	box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit;
+  }
+  
+  body {
+	font-family: 'Gilroy-Medium', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #ffffff;
+	background-color: #010223;
+  }
+
+a {
+	text-decoration: none;
 }
+
 .app-wrapper {
   display: grid;
   margin: 0 auto;
