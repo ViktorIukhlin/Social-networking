@@ -1,6 +1,7 @@
 import React from 'react';
+import s from './Profile.module.css';
+
 import MyPosts from './MyPosts/MyPosts.jsx'
-import s from './Main.module.css';
 
 const Main = () => {
     return (
