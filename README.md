@@ -1,6 +1,6 @@
-## Modification.....
+## My social-networking site.....
 
-In the project directory, you can run:
+It's my project
 
 ### `not ready yet`
 
