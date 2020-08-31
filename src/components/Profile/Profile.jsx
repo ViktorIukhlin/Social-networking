@@ -21,7 +21,6 @@ const Main = () => {
                         <div className={s.info}>Education: BSU'11</div>
                         <div className={s.info}>Web Site: https://batton-batonovich.com</div>
                     </div>
-
                     <MyPosts/>
                 </div>
             </div>
