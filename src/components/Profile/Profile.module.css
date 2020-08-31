@@ -1,7 +1,6 @@
 .main{
-    grid-area: main;
     background-color: #0C0D30;
-
+    
     -moz-box-shadow: 0 0 30px #9f81c0;
     -webkit-box-shadow: 0 0 30px #9f81c0;
     box-shadow: 0 0 30px #9f81c0;
