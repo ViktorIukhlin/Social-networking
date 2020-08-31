@@ -11,9 +11,7 @@
 
 .link {
   display: flex;
-  flex-wrap: nowrap;
-   
-  padding:15px 0px;
+  padding:15px 0 15px 5px;
   color: #FFFFFF;
   -moz-text-shadow: 0 0 10px #FDFCFC;
   -webkit-text-shadow: 0 0 10px #FDFCFC;

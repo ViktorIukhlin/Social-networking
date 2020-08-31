@@ -1,4 +1,5 @@
 import React from 'react';
+import MyPosts from './MyPosts/MyPosts.jsx'
 import s from './Main.module.css';
 
 const Main = () => {
@@ -8,7 +9,9 @@ const Main = () => {
                 <img className={s.picture} src="https://image.freepik.com/free-vector/neon-light-arrow-direction-perspective_1017-22033.jpg" alt="gras" />
 
                 <div className={s.container}>
-                    <img className={s.photo} src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" alt="PhotoMy" />
+                    <div className={s.boxPhoto}>
+                        <img className={s.photo} src="https://sun9-6.userapi.com/c628318/v628318082/4822f/s8wqON4rtbs.jpg" alt="PhotoMy" />
+                    </div>
                     <div className={s.blockAbout}>
                         <div className={s.name}>Batton B.</div>
 
@@ -18,12 +21,7 @@ const Main = () => {
                         <div className={s.info}>Web Site: https://batton-batonovich.com</div>
                     </div>
 
-                    <div className={s.post}>
-                        My posts
-                    </div>
-                    <div className={s.post}>
-                        My posts
-                    </div>
+                    <MyPosts/>
                 </div>
             </div>
         </main>

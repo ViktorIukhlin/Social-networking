@@ -14,8 +14,17 @@
     -webkit-box-shadow: 0 0 30px #9f81c0;
     box-shadow: 0 0 30px #9f81c0;
   }
+  .boxPhoto{
+    width: 150px;
+    height: 150px;
+    align-items: flex-start;
+    overflow: hidden;
+    border-radius: 2%;
+  }
   .photo{
-    height: 120px;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
   }
   .name, .info, .post{
     color: #FFFFFF;
