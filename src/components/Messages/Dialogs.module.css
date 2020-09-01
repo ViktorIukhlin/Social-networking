@@ -13,4 +13,8 @@
 }
 .message{
     margin-top: 10px;
+    margin-left: 10px;
+}
+.namesList{
+    background-color: rgb(7, 2, 71);
 }

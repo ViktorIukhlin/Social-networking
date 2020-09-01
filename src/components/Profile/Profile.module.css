@@ -1,24 +1,10 @@
-.main{
-    background-color: #0C0D30;
-    border: 2px solid rgb(27, 21, 117);
-    height: 85vh;
-  }
-  .picture {
-    height: 160px;
-    width: 100%;
-  }
-  .boxPhoto{
-    width: 150px;
-    height: 150px;
-    align-items: flex-start;
-    overflow: hidden;
-    border-radius: 2%;
-  }
-  .photo{
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
-  }
-  .name, .info, .post{
-    color: #FFFFFF;
-  }
+.main {
+  background-color: #0C0D30;
+  border: 2px solid rgb(27, 21, 117);
+  height: 85vh;
+}
+
+.picture {
+  height: 160px;
+  width: 100%;
+}

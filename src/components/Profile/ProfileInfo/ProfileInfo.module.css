@@ -1,0 +1,19 @@
+.boxPhoto {
+  width: 150px;
+  height: 150px;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.photo {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.name,
+.info,
+.post {
+  color: #FFFFFF;
+}
