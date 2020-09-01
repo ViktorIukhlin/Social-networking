@@ -1,17 +1,9 @@
 .main{
     background-color: #0C0D30;
-    
-    -moz-box-shadow: 0 0 30px #9f81c0;
-    -webkit-box-shadow: 0 0 30px #9f81c0;
-    box-shadow: 0 0 30px #9f81c0;
   }
   .picture {
     height: 160px;
     width: 100%;
-    
-    -moz-box-shadow: 0 0 30px #9f81c0;
-    -webkit-box-shadow: 0 0 30px #9f81c0;
-    box-shadow: 0 0 30px #9f81c0;
   }
   .boxPhoto{
     width: 150px;
@@ -27,5 +19,4 @@
   }
   .name, .info, .post{
     color: #FFFFFF;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 90px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
   }

@@ -3,19 +3,13 @@
   font-size: 40px;
   grid-area: nav;
   background-color: #16163D;
-
-  -moz-box-shadow: 0 0 30px #9f81c0;
-  -webkit-box-shadow: 0 0 30px #9f81c0;
-  box-shadow: 0 0 30px #9f81c0;
+  height: 265px;
 }
 
 .link {
   display: flex;
   padding:15px 0 15px 5px;
   color: #FFFFFF;
-  -moz-text-shadow: 0 0 10px #FDFCFC;
-  -webkit-text-shadow: 0 0 10px #FDFCFC;
-  text-shadow: 0 0 10px #FDFCFC;
 }
 .link:hover{
   background-color:rgba(255,0,0,0.4);
