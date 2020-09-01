@@ -1,0 +1,23 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+
+}
+.namesList{
+
+}
+.name{
+    margin-top: 10px;
+}
+.content{
+    border: 2px solid white;
+    background: rgb(5, 2, 46);
+    border-radius: 10px;
+}
+.message{
+    margin-top: 10px;
+}
+.active{
+    color: gold;
+}

@@ -46,6 +46,9 @@ html {
 a {
 	text-decoration: none;
 }
+p{
+	margin: 0;
+}
 
 .app-wrapper {
   display: grid;
