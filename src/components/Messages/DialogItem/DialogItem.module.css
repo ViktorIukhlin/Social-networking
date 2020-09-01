@@ -1,0 +1,9 @@
+.nameContainer{
+    margin: 10px 0 0 20px;
+}
+.name{
+    color: white;
+}
+.active{
+    color: gold;
+}

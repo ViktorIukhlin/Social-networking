@@ -4,12 +4,6 @@
     border: 2px solid rgb(27, 21, 117);
     height: 85vh;
 }
-.nameContainer{
-    margin: 10px 0 0 20px;
-}
-.name{
-    color: white;
-}
 .content{
     margin-top: 10px;
     border: 2px solid white;
@@ -19,7 +13,4 @@
 }
 .message{
     margin-top: 10px;
-}
-.active{
-    color: gold;
 }
