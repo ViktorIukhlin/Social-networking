@@ -4,13 +4,14 @@
     border: 2px solid rgb(27, 21, 117);
     height: 85vh;
 }
-.namesList{
-
+.nameContainer{
+    margin: 10px 0 0 20px;
 }
 .name{
-    margin-top: 10px;
+    color: white;
 }
 .content{
+    margin-top: 10px;
     border: 2px solid white;
     background: rgb(5, 2, 46);
     border-radius: 10px;
