@@ -1,8 +1,8 @@
 .dialogs{
     display: grid;
     grid-template-columns: 2fr 10fr;
-
-
+    border: 2px solid rgb(27, 21, 117);
+    height: 85vh;
 }
 .namesList{
 
@@ -14,6 +14,7 @@
     border: 2px solid white;
     background: rgb(5, 2, 46);
     border-radius: 10px;
+    height: 110px;
 }
 .message{
     margin-top: 10px;

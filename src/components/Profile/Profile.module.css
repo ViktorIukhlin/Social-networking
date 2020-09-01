@@ -1,5 +1,7 @@
 .main{
     background-color: #0C0D30;
+    border: 2px solid rgb(27, 21, 117);
+    height: 85vh;
   }
   .picture {
     height: 160px;
