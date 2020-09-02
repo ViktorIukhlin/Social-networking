@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
-import messages from './datebaseMessages';
+import messages from './databaseMessages';
 import dialogs from './databaseDialogs';
 
 let dialogsMessages = messages.map(
@@ -13,6 +13,7 @@ let dialogsItems = dialogs.map(
 )
 
 const Dialogs = (props) => {
+
     return (
         <div className={s.dialogs}>
             <div className={s.namesList}>
