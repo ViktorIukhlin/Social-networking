@@ -20,7 +20,16 @@ let state = {
             { id: 1, message: 'I\'m very angry' },
             { id: 1, message: 'I know you ate my food!!!' }
         ]
-    }
+    },
+    listOfFriends:[
+        {name: 'Hanna'},
+        {name: 'BonBon'},
+        {name: 'Dino'},
+        {name: 'Lex'},
+        {name: 'MoMo'},
+        {name: 'Mike'}
+    ]
+
 }
 
 export default state;

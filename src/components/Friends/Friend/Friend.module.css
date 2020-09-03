@@ -1,0 +1,14 @@
+.container{
+    margin: 10px;
+}
+.photo{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.name{
+    font-size: 22px;
+    text-align: center;
+}

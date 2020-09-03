@@ -1,0 +1,12 @@
+.container{
+    margin-top:40px;
+}
+.title{
+    margin-left: 5px;
+    font-size: 44px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr; 
+    margin-top: 10px;
+}
