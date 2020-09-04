@@ -1,3 +1,5 @@
+import {renderDomTree} from './../render'
+
 let state = {
     profilePage:{
         posts: [
@@ -30,6 +32,17 @@ let state = {
         {name: 'Mike'}
     ]
 
+}
+
+export let addPost = (postMessage) => {
+    debugger;
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 0
+    }
+    state.profilePage.posts.push(newPost);
+    renderDomTree(state);
 }
 
 export default state;

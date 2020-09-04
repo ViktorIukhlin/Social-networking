@@ -17,7 +17,7 @@ const App = (props) => {
         <Nav state={props.state.listOfFriends}/>
         <div className="app-wrapper-content">
           <Route path='/messages' render={ () => <Messages state={props.state.messagePage} />} />
-          <Route path='/profile'  render={ () => <Profile  state={props.state.profilePage}/>} />
+          <Route path='/profile'  render={ () => <Profile  state={props.state.profilePage} addPost={props.addPost}/>} />
 
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
