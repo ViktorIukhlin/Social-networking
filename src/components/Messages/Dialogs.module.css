@@ -14,3 +14,7 @@
 .namesList{
     background-color: rgb(7, 2, 71);
 }
+.area{
+    display: flex;
+    margin-top: 20px;
+}
