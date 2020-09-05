@@ -7,11 +7,11 @@ import Messages from './components/Messages/Dialogs';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 
 const App = (props) => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="app-wrapper">
         <Header />
         <Nav state={props.state.listOfFriends}/>
@@ -24,7 +24,7 @@ const App = (props) => {
           <Route path='/settings' component={Settings} />
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
