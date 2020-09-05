@@ -11,7 +11,7 @@ import { Route, HashRouter } from 'react-router-dom';
 
 const App = (props) => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="app-wrapper">
         <Header />
         <Nav state={props.state.listOfFriends}/>
