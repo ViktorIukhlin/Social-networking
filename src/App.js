@@ -11,7 +11,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 
 const App = (props) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="app-wrapper">
         <Header />
         <Nav state={props.state.listOfFriends}/>
