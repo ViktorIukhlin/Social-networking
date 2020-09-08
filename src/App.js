@@ -14,10 +14,15 @@ const App = (props) => {
     <HashRouter>
       <div className="app-wrapper">
         <Header />
-        <Nav state={props.state.listOfFriends}/>
+        <Nav state={props.state.sidebar.listOfFriends}/>
         <div className="app-wrapper-content">
           <Route path='/messages' render={ () => <Messages state={props.state.messagePage} />} />
-          <Route path='/profile'  render={ () => <Profile  state={props.state.profilePage} addPost={props.addPost}/>} />
+          <Route path='/profile'
+                  render={ () => <Profile  
+                    profilePage={props.state.profilePage} 
+                    addPost={props.addPost}
+                    updateNewPostText={props.updateNewPostText}
+                    />}/>
 
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
