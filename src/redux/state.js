@@ -53,6 +53,6 @@ export let updateNewPostText = (newText) => {
     renderDomTree(state);
 }
 export let subscribe = (observer) => {
-    renderDomTree = observer;
+    renderDomTree = observer; //pattern-observer
 }
 export default state;

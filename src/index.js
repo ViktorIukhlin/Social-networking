@@ -6,7 +6,7 @@ import App from './App';
 import './index.css';
 import { addPost, updateNewPostText } from './redux/state';
 
-let renderDomTree = () => {
+let renderDomTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
       <App state={state} addPost={addPost} updateNewPostText={updateNewPostText}/>
