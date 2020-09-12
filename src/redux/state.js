@@ -1,4 +1,6 @@
-import {renderDomTree} from './../render'
+let renderDomTree = () => {
+    console.log('state was changed');
+}
 
 let state = {
     profilePage:{
@@ -51,5 +53,8 @@ export let addPost = () => {
 export let updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
     renderDomTree(state);
+}
+export const subscribe = (observer) => {
+
 }
 export default state;
