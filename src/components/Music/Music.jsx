@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Music.module.css';
+import './Music.module.css';
 
 const Music = (props) => {
     return (

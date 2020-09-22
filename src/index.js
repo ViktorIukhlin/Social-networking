@@ -1,22 +1,24 @@
 import * as serviceWorker from './serviceWorker';
-import state, {subscribe} from './redux/state';
+import store from './redux/store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import { addPost, updateNewPostText } from './redux/state';
+
+console.log(store.getState());
 
 let renderDomTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App state={state} addPost={addPost} updateNewPostText={updateNewPostText}/>
+      <App state={state} addPost={store.addPost} updateNewPostText={store.updateNewPostText}/>
     </React.StrictMode>,
     document.getElementById('root')
   );
 }
-renderDomTree(state);
 
-subscribe(renderDomTree);
+renderDomTree(store.getState());
+
+store.subscribe(renderDomTree);
 
 
 serviceWorker.unregister();
