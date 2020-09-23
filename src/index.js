@@ -1,5 +1,5 @@
 import * as serviceWorker from './serviceWorker';
-import store from './redux/store';
+import store from './redux/state';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -10,7 +10,7 @@ console.log(store.getState());
 let renderDomTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App state={state} addPost={store.addPost.bind(store)} updateNewPostText={store.updateNewPostText.bind(store)}/>
+      <App state={state} dispatch={store.dispatch.bind(store)}/>
     </React.StrictMode>,
     document.getElementById('root')
   );
