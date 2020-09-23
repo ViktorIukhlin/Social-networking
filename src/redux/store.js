@@ -1,6 +1,4 @@
 let store = {
-    renderDomTree () {},
-
     _state: {
         profilePage: {
             posts: [
@@ -36,31 +34,29 @@ let store = {
             ]
         }
     },
-
-    getState () {
-        return this._state;
-    },
-
+    _callSubscriber () {},
     addPost () {
         let newPost = {
             id: 5,
             message: this._state.profilePage.newPostText,
             likesCount: 0
-        }
+        };
         this._state.profilePage.posts.push(newPost);
         this._state.profilePage.newPostText = '';
-        this.renderDomTree(this._state);
+        this._callSubscriber(this._state);
     },
-
     updateNewPostText (newText) {
         this._state.profilePage.newPostText = newText;
-        this.renderDomTree(this._state);
+        this._callSubscriber(this._state);
     },
-
     subscribe (observer) {
-        this.renderDomTree = observer; //pattern-observer
+        this._callSubscriber = observer; //pattern-observer
+    },
+    getState () {
+        return this._state;
     }
-    
+
 }
 
 export default store;
+window.store = store;
