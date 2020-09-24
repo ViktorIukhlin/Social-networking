@@ -69,14 +69,15 @@ let store = {
             this._callSubscriber(this._state);
 
          }else if (action.type === SEND_MESSAGE) {
-            this._state.messagePage.messages.push({ id: 777, messages: this._state.messagePage.newMessageBody });
+            let body = this._state.messagePage.newMessageBody;
             this._state.messagePage.newMessageBody = '';
+            this._state.messagePage.messages.push({ id: 777, message: body });
             this._callSubscriber(this._state);
          }
     }
-
+     
 }
-
+window.state =  store._state;
 export const addPostActionCreator = () => ({type: ADD_POST})
 
 export const updateNewPostTextActionCreator = (text) => 
@@ -84,8 +85,8 @@ export const updateNewPostTextActionCreator = (text) =>
 
 export const sendMessageActionCreator = () => ({type: SEND_MESSAGE})
 
-export const updateNewMessageBodyActionCreator = (text) => 
-({type: UPDATE_NEW_MESSAGE_BODY, newText: text})
+export const updateNewMessageBodyActionCreator = (body) => 
+({type: UPDATE_NEW_MESSAGE_BODY, body: body})
 
 export default store;
 window.store = store;
