@@ -16,12 +16,12 @@ const App = (props) => {
         <Header />
         <Nav state={props.state.sidebar.listOfFriends}/>
         <div className="app-wrapper-content">
-          <Route path='/messages' render={ () => <Messages state={props.state.messagePage} />} />
+          <Route path='/messages' render={ () => <Messages store={props.store} />} />
           <Route path='/profile'
                   render={ () => <Profile  
-                    profilePage={props.state.profilePage} 
-                    dispatch={props.dispatch}
-                    />}/>
+                  profilePage={props.state.profilePage} 
+                  dispatch={props.dispatch}
+                  />}/>
 
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
