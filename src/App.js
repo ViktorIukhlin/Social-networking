@@ -10,19 +10,21 @@ import Settings from './components/Settings/Settings';
 import { Route, HashRouter } from 'react-router-dom';
 
 const App = (props) => {
+  debugger;
   return (
     <HashRouter>
       <div className="app-wrapper">
         <Header />
-        <Nav state={props.state.sidebar.listOfFriends}/>
+        <Nav state={props.state.listOfFriends}/>
         <div className="app-wrapper-content">
           <Route path='/messages' 
                   render={ () => <Dialogs 
-                  store={props.store} 
+                    dialogsPage={props.state.dialogsPage}
+                    dispatch={props.dispatch}
                   />} />
           <Route path='/profile'
                   render={ () => <Profile  
-                  profilePage={props.state.profilePage} 
+                  profilePage={props.state.profilePage}  
                   dispatch={props.dispatch}
                   />}/>
 

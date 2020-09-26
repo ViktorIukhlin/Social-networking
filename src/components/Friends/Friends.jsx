@@ -2,8 +2,10 @@ import React from 'react';
 import s from './Friends.module.css'
 import Friend from './Friend/Friend';
 
+import store from '../../redux/store'
+
 const Friends = (props) => {
-    let listOfFriends = props.state.map(
+    let listOfFriends = store.getState().sidebar.listOfFriends.map(
         item => <Friend name={item.name} />
     )
     return (
