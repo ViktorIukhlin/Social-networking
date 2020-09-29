@@ -15,7 +15,7 @@ const App = (props) => {
     <HashRouter>
       <div className="app-wrapper">
         <Header />
-        <Nav state={props.state.listOfFriends}/>
+        <Nav state={props.store}/>
         <div className="app-wrapper-content">
           <Route path='/messages' render={ () => <DialogsContainer store={props.store} />} />
           <Route path='/profile'  render={ () => <Profile store={props.store} />}/>
