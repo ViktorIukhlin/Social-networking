@@ -6,22 +6,13 @@ import App from './App';
 import './index.css';
 import {Provider} from 'react-redux'
 
-
-let renderDomTree = () => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <Provider store={store}>
-        <App/>
-      </Provider>
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}
-
-renderDomTree();
-store.subscribe(() => {
-  renderDomTree();
-});
-
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App/>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
 
 serviceWorker.unregister();

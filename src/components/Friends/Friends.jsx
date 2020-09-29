@@ -6,7 +6,7 @@ import store from '../../redux/store'
 
 const Friends = (props) => {
     let listOfFriends = store.getState().sidebar.listOfFriends.map(
-        item => <Friend name={item.name} />
+        item => <Friend name={item.name} key={item.id} />
     )
     return (
         <div className={s.container}>
