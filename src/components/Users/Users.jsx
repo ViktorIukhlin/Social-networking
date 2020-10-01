@@ -1,47 +1,13 @@
+import * as axios from 'axios';
 import React from 'react'
 import styles from './styles.module.css'
 
 let Users = (props) => {
   
-  if(props.users.length === 0){
-    props.setUsers([
-      {
-        id: 1,
-        photoUrl:
-          'https://files.123freevectors.com/wp-content/uploads/new/objects/392-free-camera-iris-vector-art.png',
-        followed: true,
-        fullName: 'Valera',
-        status: 'I am a person',
-        location: { city: 'Saint-Petersburg', country: 'Russia' },
-      },
-      {
-        id: 2,
-        photoUrl:
-          'https://files.123freevectors.com/wp-content/uploads/new/objects/392-free-camera-iris-vector-art.png',
-        followed: true,
-        fullName: 'Senya',
-        status: 'I am a people',
-        location: { city: 'Moscow', country: 'Russia' },
-      },
-      {
-        id: 3,
-        photoUrl:
-          'https://files.123freevectors.com/wp-content/uploads/new/objects/392-free-camera-iris-vector-art.png',
-        followed: false,
-        fullName: 'Sasha',
-        status: 'Tired',
-        location: { city: 'Dereven', country: 'Russia' },
-      },
-      {
-        id: 4,
-        photoUrl:
-          'https://files.123freevectors.com/wp-content/uploads/new/objects/392-free-camera-iris-vector-art.png',
-        followed: false,
-        fullName: 'Lena',
-        status: 'Happy',
-        location: { city: 'Kolbaskino', country: 'Russia' },
-      },
-    ])
+  if(props.users.length === 0){   
+    axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+      props.setUsers(response.data.items)
+    });
   }
 
   return (
@@ -51,7 +17,7 @@ let Users = (props) => {
           <span>
             <div>
               <img
-                src={item.photoUrl}
+                src={item.photos.small != null ? item.photos.small: require("../../assets/images/users.png")}
                 alt="photosos"
                 className={styles.userPhoto}
               />
@@ -79,13 +45,13 @@ let Users = (props) => {
             </div>
           </span>
           <span>
-            <div>{item.fullName}</div>
+            <div>{item.name}</div>
             <div>{item.status}</div>
           </span>
-          <span>
+          {/* <span>
             <div>{item.location.country}</div>
             <div>{item.location.city}</div>
-          </span>
+          </span> */}
         </div>
       ))}
     </div>
