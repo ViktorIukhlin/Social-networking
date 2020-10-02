@@ -5,18 +5,22 @@ import styles from './styles.module.css'
 
 class Users extends React.Component {
 
-  getUsers = () => {
-    if(this.props.users.length === 0){   
-      axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-        this.props.setUsers(response.data.items)
-      });
-    }
+  componentDidMount(){
+    axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+      this.props.setUsers(response.data.items)
+    });
   }
 
   render() {
     return (
       <div>
-        <button onClick={this.getUsers}>Get Users</button>
+        <div>
+          <span className={styles.selectedPage}>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+        </div>
         {this.props.users.map((item) => (
           <div key={item.id}>
             <span>

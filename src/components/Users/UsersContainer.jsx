@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { followActionCreator, setUsersActionCreator, unfollowActionCreator } from '../../redux/usersReducer';
-import Users from './UsersС';
+import Users from './Users';
 
 let mapStateToProps = (state) => {
   return{
-    users: state.usersPage.users
+    users: state.usersPage.users,
+    pageSize: state.usersPage.pageSize,
+    totalUsersCount: state.usersPage.totalUsersCount
   }
 }
 let mapDispatchToProps = (dispatch) => {
