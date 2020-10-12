@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Nav from './components/Navigation/Nav';
-import Profile from './components/Profile/Profile';
+import ProfileContainer from './components/Profile/ProfileContainer';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import News from './components/News/News';
 import Music from './components/Music/Music';
@@ -18,7 +18,7 @@ const App = (props) => {
         <Nav state={props.store}/>
         <div className="app-wrapper-content">
           <Route path='/messages' render={ () => <DialogsContainer />} />
-          <Route path='/profile'  render={ () => <Profile />}/>
+          <Route path='/profile'  render={ () => <ProfileContainer />}/>
           <Route path='/users'  render={ () => <UsersContainer />}/>
 
           <Route path='/news' component={News} />
