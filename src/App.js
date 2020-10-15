@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
+import HeaderContainer from './components/Header/HeaderContainer';
 import Nav from './components/Navigation/Nav';
 import ProfileContainer from './components/Profile/ProfileContainer';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
@@ -14,7 +14,7 @@ const App = (props) => {
   return (
     <HashRouter>
       <div className="app-wrapper">
-        <Header />
+        <HeaderContainer />
         <Nav state={props.store}/>
         <div className="app-wrapper-content">
           <Route path='/messages' render={ () => <DialogsContainer />} />

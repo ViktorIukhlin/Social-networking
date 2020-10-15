@@ -1,12 +1,19 @@
 .header{
     grid-area: header;
+    display: flex;
     background-color: #16163D;
     margin-top: 10px;
     color: #d7ade0;
     border: 2px solid rgb(27, 21, 117);
+    position: relative;
   }
   .header img{
       padding:5px;
       height: 50px;
   }
-  
+  .loginBlock, .loginBlock a {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
