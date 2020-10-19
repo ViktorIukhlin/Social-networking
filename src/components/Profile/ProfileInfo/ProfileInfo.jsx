@@ -15,7 +15,7 @@ const ProfileInfo = (props) => {
             <div className={style.blockAbout}>
                 <div className={style.name}>Batton B.</div>
 
-                <ProfileStatus status={"Hello my friends"}/>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 <div className={style.info}>Date of Brith: 2 january</div>
                 <div className={style.info}>City: Saint-Petersburg</div>
                 <div className={style.info}>Education: BSU'11</div>
