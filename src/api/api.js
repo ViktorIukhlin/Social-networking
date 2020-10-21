@@ -1,4 +1,5 @@
 import * as axios from "axios";
+import { getAuthUserData } from 'redux/authReducer';
 
 const instance = axios.create({
   withCredentials: true,
