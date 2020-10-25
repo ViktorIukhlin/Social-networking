@@ -7,9 +7,9 @@ import { login } from "../../redux/authReducer"
 import { Redirect } from 'react-router-dom';
 import style from "../common/FormsControls/FormsControls.module.css"
 
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit, error}) => {
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div>
         <Field placeholder={'Email'} name={'email'} component={Input} autoComplete="off" validate={required}/>
       </div>
@@ -19,8 +19,8 @@ const LoginForm = (props) => {
       <div>
         <Field component={Input} name={'rememberMe'} type={"checkbox"}/> remember me
       </div>
-        { props.error && <div className={style.formSummaryError}> {props.error} </div>}
-      <button>Login</button>
+        { error && <div className={style.formSummaryError}> {error} </div>}
+      <button>Login</button> 
     </form>
   )
 }
