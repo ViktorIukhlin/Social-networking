@@ -1,27 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73975f65dcf267e67ffd4c716e0c6ffd",
+    "revision": "02cdb436806982e727e91cacfd11b4d1",
     "url": "/Social-networking/index.html"
   },
   {
-    "revision": "619be1b053f69ce14f17",
-    "url": "/Social-networking/static/css/main.eb0741ae.chunk.css"
+    "revision": "e7fe8c72c81cfa40841c",
+    "url": "/Social-networking/static/css/3.9cde6707.chunk.css"
   },
   {
-    "revision": "e110a0c5d3a24a6bfe3e",
-    "url": "/Social-networking/static/js/2.38edd441.chunk.js"
+    "revision": "4c27ff1cde589cc3080c",
+    "url": "/Social-networking/static/css/4.33b8c510.chunk.css"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Social-networking/static/js/2.38edd441.chunk.js.LICENSE.txt"
+    "revision": "47ba80f3ddfdacaf8556",
+    "url": "/Social-networking/static/css/main.baba6279.chunk.css"
   },
   {
-    "revision": "619be1b053f69ce14f17",
-    "url": "/Social-networking/static/js/main.f6fdd5c6.chunk.js"
+    "revision": "48d6bf3467bedb339b78",
+    "url": "/Social-networking/static/js/2.6a98a461.chunk.js"
   },
   {
-    "revision": "f20a57fc55a43efc73a3",
-    "url": "/Social-networking/static/js/runtime-main.84785785.js"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/Social-networking/static/js/2.6a98a461.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "e7fe8c72c81cfa40841c",
+    "url": "/Social-networking/static/js/3.e239203c.chunk.js"
+  },
+  {
+    "revision": "4c27ff1cde589cc3080c",
+    "url": "/Social-networking/static/js/4.2cf1f888.chunk.js"
+  },
+  {
+    "revision": "47ba80f3ddfdacaf8556",
+    "url": "/Social-networking/static/js/main.fbd72cea.chunk.js"
+  },
+  {
+    "revision": "5042c5b8d4a759c081ed",
+    "url": "/Social-networking/static/js/runtime-main.a61dc3ff.js"
   },
   {
     "revision": "725bc066722fdfc327f582568e8ce97e",
@@ -70,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ddd4573d95bb72bc585be0f4c03b69e7",
     "url": "/Social-networking/static/media/TextMeOne-Regular.ddd4573d.woff"
+  },
+  {
+    "revision": "cdfbc787e620fb796d9b7e5b4f07cd78",
+    "url": "/Social-networking/static/media/spinner.cdfbc787.svg"
   },
   {
     "revision": "4064b47b16bb2f3c19380d38ca1855f3",
