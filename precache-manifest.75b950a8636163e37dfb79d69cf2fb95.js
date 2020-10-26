@@ -1,43 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02cdb436806982e727e91cacfd11b4d1",
+    "revision": "55a268f253444a9bd5effc63816d2b6b",
     "url": "/Social-networking/index.html"
   },
   {
-    "revision": "e7fe8c72c81cfa40841c",
-    "url": "/Social-networking/static/css/3.9cde6707.chunk.css"
+    "revision": "01d4bf11a133d0f5b8d1",
+    "url": "/Social-networking/static/css/3.33b8c510.chunk.css"
   },
   {
-    "revision": "4c27ff1cde589cc3080c",
-    "url": "/Social-networking/static/css/4.33b8c510.chunk.css"
+    "revision": "5aea5686619a9d551451",
+    "url": "/Social-networking/static/css/main.f5e3bc57.chunk.css"
   },
   {
-    "revision": "47ba80f3ddfdacaf8556",
-    "url": "/Social-networking/static/css/main.baba6279.chunk.css"
-  },
-  {
-    "revision": "48d6bf3467bedb339b78",
-    "url": "/Social-networking/static/js/2.6a98a461.chunk.js"
+    "revision": "48aacdb95962068f3c99",
+    "url": "/Social-networking/static/js/2.7b6abd79.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Social-networking/static/js/2.6a98a461.chunk.js.LICENSE.txt"
+    "url": "/Social-networking/static/js/2.7b6abd79.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7fe8c72c81cfa40841c",
-    "url": "/Social-networking/static/js/3.e239203c.chunk.js"
+    "revision": "01d4bf11a133d0f5b8d1",
+    "url": "/Social-networking/static/js/3.dbf372f5.chunk.js"
   },
   {
-    "revision": "4c27ff1cde589cc3080c",
-    "url": "/Social-networking/static/js/4.2cf1f888.chunk.js"
+    "revision": "5aea5686619a9d551451",
+    "url": "/Social-networking/static/js/main.67b5df07.chunk.js"
   },
   {
-    "revision": "47ba80f3ddfdacaf8556",
-    "url": "/Social-networking/static/js/main.fbd72cea.chunk.js"
-  },
-  {
-    "revision": "5042c5b8d4a759c081ed",
-    "url": "/Social-networking/static/js/runtime-main.a61dc3ff.js"
+    "revision": "ef8cc52a61c4682cd48b",
+    "url": "/Social-networking/static/js/runtime-main.49f9db6e.js"
   },
   {
     "revision": "725bc066722fdfc327f582568e8ce97e",
