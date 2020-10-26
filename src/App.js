@@ -13,9 +13,10 @@ import {initializeApp} from './redux/appReducer'
 import { compose } from 'redux';
 import Preloader from './components/common/Preloader/Preloader';
 import { withSuspense } from './hoc/withSuspense';
+import ProfileContainer from './components/Profile/ProfileContainer'
+
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
-const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 
 
@@ -34,7 +35,7 @@ class App extends React.Component {
           <Nav state={this.props.store}/>
           <div className="app-wrapper-content">
             <Route path='/messages' render={ withSuspense(DialogsContainer)} />
-            <Route path='/profile/:userId?' render={ withSuspense(ProfileContainer)} />
+            <Route path='/profile/:userId?' render={ () => <ProfileContainer />}/>
             <Route path='/users'  render={ () => <UsersContainer />}/>
             <Route path='/login'  render={ () => <Login />}/>
   
