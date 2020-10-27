@@ -10,7 +10,7 @@ const ProfileInfo = (props) => {
     return (
         <div className={style.container}>
             <div className={style.boxPhoto}>
-                <img className={style.photo} src={props.profile.photos.large} alt="PhotoMy" />
+                <img className={style.photo} src={props.profile.photos.large || require("../../../assets/images/users.png")} alt="PhotoMy" />
             </div>
             <div className={style.blockAbout}>
                 <div className={style.name}>Batton B.</div>
