@@ -17,3 +17,12 @@
 .post {
   color: #FFFFFF;
 }
+.contact {
+  padding-left: 20px;
+}
+.formSummaryError 
+{
+  border: solid red 2px;
+  padding: 5px;
+  color: rgb(104, 33, 33);
+}
