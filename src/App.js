@@ -5,7 +5,7 @@ import Nav from './components/Navigation/Nav';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter, Redirect } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
 import Login from './components/Login/Login';
 import { connect } from 'react-redux';
@@ -42,6 +42,7 @@ class App extends React.Component {
             <Route path='/news' component={News} />
             <Route path='/music' component={Music} />
             <Route path='/settings' component={Settings} />
+            <Redirect from='/' to='/profile'/>
           </div>
         </div>
       </HashRouter>
