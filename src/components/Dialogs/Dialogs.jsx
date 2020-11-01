@@ -18,6 +18,11 @@ const Dialogs = (props) => {
 
   const addNewMessage = (values) => {
     props.sendMessage(values.newMessageBody);
+    values.newMessageBody = '';
+  }
+  const addNewFriend = (values) => {
+    props.sendName(values.newNameOfFriend);
+    values.newNameOfFriend = '';
   }
 
   return (
@@ -25,6 +30,7 @@ const Dialogs = (props) => {
       <div className={s.namesList}>{dialogsItems}</div>
       <div className={s.content}>{dialogsMessages}</div>
       <AddMessageFormRedux onSubmit={addNewMessage}/>
+      <AddNewNameOfFriendFormRedux onSubmit={addNewFriend}/>
     </div>
   )
 }
@@ -34,16 +40,31 @@ const AddMessageForm = (props) => {
     <form onSubmit={props.handleSubmit}>
       <div className={s.area}>
         <Field component={Textarea}
-              name="newMessageBody"
-              validate={[required, maxLength50]}
-              placeholder="Enter your message" 
-              />
+          name="newMessageBody"
+          validate={[required, maxLength50]}
+          placeholder="Enter your message" 
+          />
+        <button>Send</button>
+      </div>
+    </form>
+  )
+}
+const AddNewNameOfFriend = (props) => {
+  return (
+    <form onSubmit={props.handleSubmit}>
+      <div className={s.area}>
+        <Field component={Textarea}
+          name="newNameOfFriend"
+          validate={[required, maxLength50]}
+          placeholder="Enter name your new Friend" 
+          />
         <button>Send</button>
       </div>
     </form>
   )
 }
 
+const AddNewNameOfFriendFormRedux = reduxForm({form: "newNameOfFriend"}) (AddNewNameOfFriend);
 const AddMessageFormRedux = reduxForm({form: "dialogAddMessageForm"}) (AddMessageForm);
 
 export default Dialogs

@@ -1,4 +1,5 @@
 const SEND_MESSAGE = 'SEND-MESSAGE';
+const ADD_DIALOGS = 'ADD_DIALOGS';
 
 let initialState = {
   dialogs: [
@@ -24,11 +25,18 @@ const dialogsReducer = (state = initialState, action) => {
         ...state,
         messages: [...state.messages, { id: 777, message: body }]
       }
+    case ADD_DIALOGS:
+      let newNameOfFriend = action.newNameOfFriend;
+      return {
+        ...state,
+        dialogs: [...state.dialogs, { name: action.newNameOfFriend, id: 777 }]
+      }
     default:
       return state;
   }
 }
 
 export const sendMessageActionCreator = (newMessageBody) => ({type: SEND_MESSAGE, newMessageBody})
+export const addDialogsActionCreator = (newNameOfFriend) => ({type: ADD_DIALOGS, newNameOfFriend})
  
 export default dialogsReducer;

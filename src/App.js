@@ -42,7 +42,7 @@ class App extends React.Component {
             <Route path='/news' component={News} />
             <Route path='/music' component={Music} />
             <Route path='/settings' component={Settings} />
-            <Redirect from='/' to='/profile'/>
+            <Redirect from='/' to='/messages'/>
           </div>
         </div>
       </HashRouter>
